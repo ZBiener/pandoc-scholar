@@ -73,6 +73,9 @@ $endif$
 $if(subtitle)$
 <p property="alternativeHeadline" class="subtitle">$subtitle$</p>
 $endif$
+
+$if(course_details)$<p>$for(course_details)$$course_details$$sep$ · $endfor$ </p>$endif$
+
 <!-- </header> -->
 <p class="author-list">
 $for(author)$
